@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About Us - Café Delight</title>
+  <style>
+    /* Reset and base */
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #fefefe, #f3e9dc);
+      color: #4a403a;
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Header with gradient */
+    header {
+      background: linear-gradient(90deg, #a9746e, #5f4b3f);
+      padding: 1.8rem 3rem;
+      color: #fff;
+      font-size: 2rem;
+      font-weight: 700;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    /* Navigation */
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+      margin: 0;
+      padding: 0;
+    }
+    nav ul li a {
+      color: #f0e6d2;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.15rem;
+      padding: 6px 12px;
+      border-radius: 6px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    nav ul li a:hover,
+    nav ul li a:focus {
+      background-color: #d0b084;
+      color: #3a2f24;
+      outline: none;
+      box-shadow: 0 0 8px #d0b084aa;
+    }
+
+    /* Container for main content */
+    .container {
+      max-width: 900px;
+      margin: 3rem auto 5rem;
+      padding: 0 1.5rem;
+      background: #fff;
+      border-radius: 15px;
+      box-shadow: 0 8px 24px rgba(101, 67, 33, 0.12);
+      animation: fadeIn 1s ease forwards;
+    }
+
+    /* Page title */
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 1.8rem;
+      color: #6f4e37;
+      text-align: center;
+      font-family: 'Georgia', serif;
+      text-shadow: 1px 1px 3px #d0b084;
+    }
+
+    /* Paragraph styling */
+    p {
+      font-size: 1.2rem;
+      color: #5a4631;
+      margin-bottom: 1.8rem;
+      letter-spacing: 0.02em;
+    }
+
+    /* Core values section */
+    .values {
+      background: #f7f1e9;
+      border-radius: 12px;
+      padding: 2rem 2.5rem;
+      box-shadow: inset 0 0 10px #d9c6afcc;
+      margin-top: 3rem;
+    }
+    .values h2 {
+      color: #a9746e;
+      font-size: 2.2rem;
+      margin-bottom: 1.5rem;
+      text-align: center;
+      font-family: 'Georgia', serif;
+      text-shadow: 1px 1px 2px #b4977e;
+    }
+    .values ul {
+      list-style: disc inside;
+      font-size: 1.15rem;
+      color: #735a3e;
+      max-width: 650px;
+      margin: 0 auto;
+      line-height: 1.75;
+      font-weight: 600;
+    }
+    .values ul li {
+      margin-bottom: 1rem;
+      transition: color 0.3s ease;
+    }
+    .values ul li strong {
+      color: #8a5e3b;
+    }
+    .values ul li:hover {
+      color: #a9746e;
+      cursor: default;
+    }
+
+    /* Footer styling */
+    footer {
+      text-align: center;
+      margin: auto 0 2rem;
+      color: #a78b5b;
+      font-size: 1rem;
+      font-style: italic;
+      letter-spacing: 0.04em;
+    }
+
+    /* Fade in animation */
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    /* Responsive tweaks */
+    @media (max-width: 640px) {
+      header {
+        font-size: 1.6rem;
+        padding: 1.2rem 1.5rem;
+      }
+      nav ul {
+        gap: 1.2rem;
+      }
+      h1 {
+        font-size: 2.2rem;
+      }
+      p, .values ul {
+        font-size: 1rem;
+      }
+      .container {
+        margin: 2rem 1rem 4rem;
+        padding: 1.5rem 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    Café Delight
+    <nav>
+      <ul>
+
+        
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html" aria-current="page">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+          <li><a href="reservation.html">Reservation</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container" role="main">
+    <h1>About Café Delight</h1>
+
+    <p>
+      Established in 2022, <strong>Café Delight</strong> is a cozy and welcoming space dedicated to serving the finest quality coffee and freshly baked treats. Our mission is to create an inviting atmosphere where friends and families can gather, relax, and enjoy a memorable café experience. We believe in the art of coffee-making and are committed to sourcing the best beans from sustainable farms to craft every cup with care.
+    </p>
+
+    <p>
+      Our skilled baristas and passionate kitchen staff work tirelessly to bring you innovative drinks, delicious desserts, and wholesome snacks, all made with fresh and natural ingredients. Whether you're stopping by for your morning espresso or spending the afternoon with friends, Café Delight offers a warm and friendly environment for every occasion.
+    </p>
+
+    <section class="values" aria-labelledby="core-values-heading">
+      <h2 id="core-values-heading">Our Core Values</h2>
+      <ul>
+        <li><strong>Quality:</strong> We use premium ingredients and expert techniques to ensure every item meets our high standards.</li>
+        <li><strong>Community:</strong> We strive to be a place where people connect and feel at home.</li>
+        <li><strong>Sustainability:</strong> We support ethical sourcing and eco-friendly practices.</li>
+        <li><strong>Passion:</strong> Our team is dedicated to delivering exceptional service and products.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Café Delight. All rights reserved.
+  </footer>
+
+</body>
+</html>
